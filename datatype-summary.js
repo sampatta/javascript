@@ -22,3 +22,23 @@ let ppp= {
     hh:77
 }
 console.log(ppp)
+
+
+// stack and heap
+// primitive stack
+// non premitive heap
+
+let myYoutube = "ji"
+let a = myYoutube
+a="f"
+console.log(a)
+console.log(myYoutube)
+
+let aa = {
+    email :"fss",
+    upi : "dd"
+}
+let bb =aa
+
+bb.email = "dddd"
+console.log([aa.email, bb.email])
