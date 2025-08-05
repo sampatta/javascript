@@ -16,3 +16,5 @@ undefined where value is not assigned
 console.log(typeof null)
 // null is object
 // undefined is undefined type
+
+console.log(typeof undefined)
