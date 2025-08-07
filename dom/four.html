@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code | dom </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    function addlang(lanname){
+        const li = document.createElement("li")
+        li.innerHTML = `${lanname}`
+        document.querySelector(".language").appendChild(li)
+    }
+    addlang("python")
+    addlang("java")
+    function addopt(lan){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(lan))
+        document.querySelector(".language").appendChild(li)
+    }
+    addopt("ruby")
+    //edit
+    const second = document.querySelector("li:nth-child(2)")
+    const news = document.createElement("li")
+    news.textContent = "mojo"
+    second.replaceWith(news)
+    const first = document.querySelector("li:nth-child(1)")
+    // const n = document.createElement("li")
+    // n.textContent = "javascript"
+    // first.replaceWith(n)
+    first.remove()
+</script>
+</html>
